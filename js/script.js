@@ -105,7 +105,7 @@ var Movie = React.createClass({
 
 var MoviesList = React.createClass({
 	propTypes: {
-  		movies: React.PropTypes.array.isRequired,
+  		items: React.PropTypes.array.isRequired,
 	},
 
     render: function(){
@@ -120,7 +120,7 @@ var MoviesList = React.createClass({
 var element =
     React.createElement('div', {},
     	React.createElement('h1', {}, 'Lista filmów'),
-    	React.createElement(MoviesList, {movies: movies})
+    	React.createElement(MoviesList, {items: movies})
 );
 
 ReactDOM.render(element, document.getElementById('app'));
