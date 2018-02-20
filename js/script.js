@@ -145,7 +145,7 @@ var moviesElements = movies.map(function(movie) {
 });
 
 
-var element = React.createElement(MoviesList, {movies: movies});
+var element = React.createElement(MoviesList, {movies: movies});  
 
 ReactDOM.render(element, document.getElementById('app'));
 */
