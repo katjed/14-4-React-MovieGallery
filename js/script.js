@@ -109,7 +109,7 @@ var MoviesList = React.createClass({
 	},
 
     render: function(){
-    	var moviesElements = this.props.items.map(function(movie) {  //  movies.map??
+    	var moviesElements = this.props.items.map(function(movie) {  
     		return React.createElement(Movie, {item: movie, key: movie.id});
 		});
 
